@@ -1,0 +1,17 @@
+{
+    "name": "mongang-dashboard",
+    "version": "1.0.0",
+    "private": true,
+    "scripts": {
+        "client": "cd client && PORT=3001 npm start",
+        "server": "cd server && npm start",
+        "dev": "concurrently \"npm run server\" \"npm run client\"",
+        "install-all": "npm install && cd client && npm install && cd ../server && npm install"
+    },
+    "dependencies": {
+        "concurrently": "^8.2.2"
+    },
+    "engines": {
+        "node": ">=18.0.0"
+    }
+}
