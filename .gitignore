@@ -10,13 +10,7 @@
 /client/coverage
 /server/coverage
 
-# next.js
-/client/.next/
-/client/out/
-/client/build
-/client/.vercel
-
-# production
+# production build files
 /build
 /client/build
 /server/build
@@ -24,59 +18,68 @@
 /client/dist
 /server/dist
 
-# misc
-.DS_Store
+# environment variables and secrets
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env.*
+*.env
+config.json
+/config/*.json
+google-credentials.json
+*-credentials.json
 *.pem
-Thumbs.db
+*.key
+*.cert
 
-# debug
+# logs
+logs
+*.log
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-.pnpm-debug.log*
+pnpm-debug.log*
 
-# local env files
-.env
-.env*.local
-.env.development
-.env.test
-.env.production
-.env.local
-.env.*.local
-
-# credentials
-google-credentials.json
-**/google-credentials.json
-**/credentials.json
-**/token.json
-
-# IDE
-.idea
-.vscode
+# IDE and editor files
+.idea/
+.vscode/
 *.swp
 *.swo
-
-# vercel
-.vercel
-.vercel/
-
-# typescript
-*.tsbuildinfo
-next-env.d.ts
-
-# temp files
-.tmp
-/coverage
-.cache
-.next
-*.log
-logs/
-tmp/
+*.swn
+*.bak
+*.sublime*
+.project
+.settings/
+.classpath
 
 # OS generated files
-.DS_Store*
+.DS_Store
+.DS_Store?
 ._*
 .Spotlight-V100
 .Trashes
 ehthumbs.db
 Thumbs.db
+
+# Temporary files
+.tmp/
+temp/
+tmp/
+*.tmp
+*.temp
+
+# Vercel
+.vercel
+.now
+
+# Debug files
+debug/
+.debug/
+
+# Cache directories
+.cache/
+.npm/
+.eslintcache
+.stylelintcache
